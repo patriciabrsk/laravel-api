@@ -20,10 +20,11 @@ Route::middleware('auth')
     ->namespace('Admin')
     ->prefix('admin')
     ->name('admin.')
-    ->group(function(){
+    ->group(function() {
         Route::get('/', 'HomeController@index')->name('home');
         Route::resource('posts', 'PostController');
         Route::resource('categories', 'CategoryController');
     });
 
+Route::get('/latest-posts', 'Guest\PostController@index')->name('guest.posts');
 Route::get('/{any}', 'Guest\HomeController@index')->where('any','.*');
