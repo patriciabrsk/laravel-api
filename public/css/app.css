@@ -11251,6 +11251,10 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+img#medium-logo {
+  width: 200px;
+}
+
 div#guest-wrapper {
   background-color: #fff;
   color: #636b6f;
