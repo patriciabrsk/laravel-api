@@ -38,7 +38,7 @@
 
                     </div>
                     <div class="title m-b-md">
-                        Laravel
+                        <img class="w-50" src="/img/medium_logo.png" alt="medium logo">
                     </div>
 
                     <div class="links">
@@ -58,4 +58,3 @@
         <script src="{{ asset('js/front.js') }}"></script>
     </body>
 </html>
- 
