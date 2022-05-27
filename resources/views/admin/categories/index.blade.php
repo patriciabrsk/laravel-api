@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container-fluid w-75 mx-auto" id="categories-wrapper">
-        <div class="row">
+        <div class="row d-flex">
             @if(session('deleted-message'))
                 <div class="col-12">
                     <div class="alert alert-warning">
@@ -19,14 +19,14 @@
                 </div>
             @endif
 
-            <div class="col-12">
+            <div class="col-12 align-self-end">
                 <a href="{{route('admin.categories.create')}}" class="btn btn-primary text-white">Add new topic</a>
             </div>
 
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th>Category</th>
+                        <th>Topics</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -70,7 +70,7 @@
         console.log(deleteForms);
         deleteForms.forEach(singleForm => {
             singleForm.addEventListener('submit', function (event) {
-                event.preventDefault(); 
+                event.preventDefault();
                 userConfirmation = window.confirm(`Are you sure you want to delete ${this.getAttribute('category-title')}?` );
                 if (userConfirmation) {
                     this.submit();

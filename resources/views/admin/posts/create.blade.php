@@ -5,7 +5,7 @@
     <div class="wrapper w-75 mx-auto">
         <div class="container-fluid">
             <div class="row p-4">
-                {{-- @if ($errors->any())
+                @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
@@ -13,7 +13,7 @@
                         @endforeach
                     </ul>
                 </div>
-                @endif --}}
+                @endif
             </div>
             <div class="row p-4">
                 <form action="{{ route('admin.posts.store') }}" method="post">

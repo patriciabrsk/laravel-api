@@ -20,7 +20,7 @@
             @endif
 
             <div class="col-12">
-                <a href="{{route('admin.posts.create')}}" class="btn btn-lg btn-primary">Publish new post</a>
+                <a href="{{route('admin.posts.create')}}" class="btn btn-lg btn-primary text-white">Publish new post</a>
             </div>
 
             <table class="table table-hover">
@@ -53,14 +53,14 @@
                                 {{ $post->created_at }}
                             </td>
                             <td class="d-flex">
-                                <a href="{{ route("admin.posts.edit", $post) }}" class="btn btn-success btn-sm me-2" >Edit</a>
+                                <a href="{{ route("admin.posts.edit", $post) }}" class="btn btn-success btn-sm me-2 text-white" >Edit</a>
 
 
                                 <form action="{{ route('admin.posts.destroy', $post) }}" method="POST" class="post-form-destroyer" post-title="{{ $post->title }}">
                                     @csrf
                                     @method('DELETE')
 
-                                    <button type="submit"  class="btn btn-danger">Delete</a>
+                                    <button type="submit"  class="btn btn-danger btn-sm text-white">Delete</a>
                                 </form>
                             </td>
                         </tr>
