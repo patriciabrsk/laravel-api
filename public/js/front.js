@@ -1973,7 +1973,9 @@ __webpack_require__.r(__webpack_exports__);
       });
     }
   },
-  created: function created() {}
+  created: function created() {
+    this.getPosts();
+  }
 });
 
 /***/ }),
@@ -2501,19 +2503,26 @@ var render = function () {
       { staticClass: "card mb-3", staticStyle: { "max-width": "540px" } },
       [
         _c("div", { staticClass: "row g-0" }, [
-          _vm._m(0),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("img", {
+              staticClass: "img-fluid rounded-start",
+              attrs: { src: _vm.post.image_url, alt: _vm.post.title },
+            }),
+          ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-md-8" }, [
             _c("div", { staticClass: "card-body" }, [
               _c("h5", { staticClass: "card-title" }, [
-                _vm._v(_vm._s(_vm.post.title)),
+                _vm._v(
+                  _vm._s(_vm.post.title) + " - " + _vm._s(_vm.post.user_id)
+                ),
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "card-text" }, [
-                _vm._v(_vm._s(_vm.post.user_id)),
+                _vm._v(_vm._s(_vm.post.content)),
               ]),
               _vm._v(" "),
-              _vm._m(1),
+              _vm._m(0),
             ]),
           ]),
         ]),
@@ -2522,17 +2531,6 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-4" }, [
-      _c("img", {
-        staticClass: "img-fluid rounded-start",
-        attrs: { src: __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '...'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())), alt: "..." },
-      }),
-    ])
-  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
