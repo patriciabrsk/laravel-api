@@ -15,32 +15,27 @@
     </head>
     <body>
         <div id="guest-wrapper">
-            <div class="flex-center position-ref full-height">
+            <div class="flex-center position-ref flex-column full-height">
+                <div class="title d-flex justify-content-center m-b-md">
+                    <img class="w-50" src="/img/medium_logo.png" alt="medium logo">
+                </div>
                 @if (Route::has('login'))
-                    <div class="top-right links">
-                        @auth
-                            <a href="{{ url('/home') }}">Home</a>
-                        @else
-                            <a href="{{ route('login') }}">Login</a>
+                <div class="top-right links">
+                    @auth
+                    <a href="{{ route('admin.home') }}">Home</a>
+                    <a href="{{ route('admin.posts.index') }}">Posts</a>
+                    <a href="{{ route('admin.categories.index') }}">Topics</a>
+                    @else
+                    <a href="{{ route('login') }}">Login</a>
 
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}">Register</a>
-                            @endif
-                        @endauth
-                    </div>
+                    @if (Route::has('register'))
+                    <a href="{{ route('register') }}">Register</a>
+                    @endif
+                    @endauth
+                </div>
                 @endif
 
                 <div class="content">
-                    <div class="">
-                        @if (Auth::check())
-                            Benvenut* {{Auth::user()['name']}}!!
-                        @endif
-
-                    </div>
-                    <div class="title m-b-md">
-                        <img class="w-50" src="/img/medium_logo.png" alt="medium logo">
-                    </div>
-
                     <div class="links">
                         <a href="https://laravel.com/docs">Docs</a>
                         <a href="https://laracasts.com">Laracasts</a>
@@ -54,6 +49,7 @@
                 </div>
             </div>
         </div>
+        <div id="root"></div>
 
         <script src="{{ asset('js/front.js') }}"></script>
     </body>

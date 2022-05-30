@@ -1,13 +1,22 @@
 <template>
-    <div>
-        <h1>WIP</h1>
+    <div class="container-fluid">
+        <div class="row">
+
+            <PostList />
+        </div>
     </div>
 </template>
 
 <script>
+import PostList from '../components/PostList.vue';
 export default {
     name: 'App',
-    components: {},
+    data() {
+        return {
+            posts: [],
+        }
+    },
+    components: { PostList }
 
 }
 </script>
