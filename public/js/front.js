@@ -1899,84 +1899,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Post.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Post',
-  components: {},
-  props: ['post']
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PostList.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PostList.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_Post_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Post.vue */ "./resources/js/components/Post.vue");
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'App',
-  data: function data() {
-    return {
-      posts: []
-    };
-  },
-  components: {
-    Post: _components_Post_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
-  },
-  methods: {
-    getPosts: function getPosts() {
-      var _this = this;
-
-      axios.get('http://localhost:8000/api/posts').then(function (response) {
-        _this.posts = response.data;
-      })["catch"](function (error) {
-        console.error(error);
-      });
-    }
-  },
-  created: function created() {
-    this.getPosts();
-  }
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/resources/js/components/PostList.vue: Invalid shorthand property initializer. (40:32)\n\n\u001b[0m \u001b[90m 38 |\u001b[39m                 \u001b[36mconst\u001b[39m { current_page\u001b[33m,\u001b[39m last_page } \u001b[33m=\u001b[39m response\u001b[33m.\u001b[39mdata\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m                 \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpagination \u001b[33m=\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m                     currentPage \u001b[33m=\u001b[39m current_page\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m                     lastPage \u001b[33m=\u001b[39m last_page\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m                 }\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m             })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m((error) \u001b[33m=>\u001b[39m {\u001b[0m\n    at instantiate (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:72:32)\n    at constructor (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:358:12)\n    at Parser.raise (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:3334:19)\n    at Parser.checkExpressionErrors (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:4078:12)\n    at Parser.parseMaybeAssign (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12266:12)\n    at Parser.parseMaybeAssign (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12260:25)\n    at Parser.parseExpressionBase (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12164:23)\n    at /Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12158:39\n    at Parser.allowInAnd (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:14252:16)\n    at Parser.parseExpression (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12158:17)\n    at Parser.parseStatementContent (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:14692:23)\n    at Parser.parseStatement (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:14549:17)\n    at Parser.parseBlockOrModuleBlockBody (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:15192:25)\n    at Parser.parseBlockBody (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:15183:10)\n    at Parser.parseBlock (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:15167:10)\n    at Parser.parseFunctionBody (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:13857:24)\n    at Parser.parseArrowExpression (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:13828:10)\n    at Parser.parseParenAndDistinguishExpression (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:13326:12)\n    at Parser.parseExprAtom (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12883:23)\n    at Parser.parseExprSubscripts (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12555:23)\n    at Parser.parseUpdate (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12534:21)\n    at Parser.parseMaybeUnary (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12505:23)\n    at Parser.parseMaybeUnaryOrPrivate (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12299:61)\n    at Parser.parseExprOps (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12306:23)\n    at Parser.parseMaybeConditional (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12276:23)\n    at Parser.parseMaybeAssign (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12228:21)\n    at /Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12186:39\n    at Parser.allowInAnd (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:14258:12)\n    at Parser.parseMaybeAssignAllowIn (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12186:17)\n    at Parser.parseExprListItem (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:13963:18)\n    at Parser.parseCallExpressionArguments (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12781:22)\n    at Parser.parseCoverCallAndAsyncArrowHead (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12678:29)\n    at Parser.parseSubscript (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12603:19)\n    at Parser.parseSubscripts (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12572:19)\n    at Parser.parseExprSubscripts (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12561:17)\n    at Parser.parseUpdate (/Users/patriciabrsk/Desktop/BOOLEAN/laravel-api/node_modules/@babel/parser/lib/index.js:12534:21)");
 
 /***/ }),
 
@@ -1998,15 +1928,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'App',
-  data: function data() {
-    return {
-      posts: []
-    };
-  },
   components: {
     PostList: _components_PostList_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
@@ -2482,72 +2406,6 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post.vue?vue&type=template&id=5e8280ea&":
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Post.vue?vue&type=template&id=5e8280ea& ***!
-  \*******************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card" }, [
-    _c(
-      "div",
-      { staticClass: "card mb-3", staticStyle: { "max-width": "540px" } },
-      [
-        _c("div", { staticClass: "row g-0" }, [
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("img", {
-              staticClass: "img-fluid rounded-start",
-              attrs: { src: _vm.post.image_url, alt: _vm.post.title },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-8" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h5", { staticClass: "card-title" }, [
-                _vm._v(
-                  _vm._s(_vm.post.title) + " - " + _vm._s(_vm.post.user_id)
-                ),
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "card-text" }, [
-                _vm._v(_vm._s(_vm.post.content)),
-              ]),
-              _vm._v(" "),
-              _vm._m(0),
-            ]),
-          ]),
-        ]),
-      ]
-    ),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "card-text" }, [
-      _c("small", { staticClass: "text-muted" }, [
-        _vm._v("Last updated 3 mins ago"),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PostList.vue?vue&type=template&id=4720a3c9&scoped=true&":
 /*!***********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PostList.vue?vue&type=template&id=4720a3c9&scoped=true& ***!
@@ -2593,7 +2451,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid" }, [
+  return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [_c("PostList")], 1),
   ])
 }
@@ -14778,75 +14636,6 @@ try {
 // easier to handle this case. if(!global) { ...}
 
 module.exports = g;
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Post.vue":
-/*!******************************************!*\
-  !*** ./resources/js/components/Post.vue ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Post_vue_vue_type_template_id_5e8280ea___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post.vue?vue&type=template&id=5e8280ea& */ "./resources/js/components/Post.vue?vue&type=template&id=5e8280ea&");
-/* harmony import */ var _Post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Post.vue?vue&type=script&lang=js& */ "./resources/js/components/Post.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Post_vue_vue_type_template_id_5e8280ea___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Post_vue_vue_type_template_id_5e8280ea___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/Post.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/Post.vue?vue&type=script&lang=js&":
-/*!*******************************************************************!*\
-  !*** ./resources/js/components/Post.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Post.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/Post.vue?vue&type=template&id=5e8280ea&":
-/*!*************************************************************************!*\
-  !*** ./resources/js/components/Post.vue?vue&type=template&id=5e8280ea& ***!
-  \*************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_template_id_5e8280ea___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Post.vue?vue&type=template&id=5e8280ea& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post.vue?vue&type=template&id=5e8280ea&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_template_id_5e8280ea___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_template_id_5e8280ea___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
 
 
 /***/ }),

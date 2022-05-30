@@ -15,12 +15,11 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::paginate(10);
-        return response()->json(
-            [
-                'success' => 'true',
-                'results' => $posts,
-            ]);
+        $posts = Post::with(['user','categories', 'comments' ])
+        ->inRandomOrder()
+        ->paginate(6);
+
+        return response()->json($posts);
     }
 
     /**
@@ -42,11 +41,11 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        $post = Post::findOrFail($id);
+        $post = Post::with(['user','categories', 'comments' ])->findOrFail($id);
         return response()->json(
             [
-                'success' => 'true',
-                'results' => [$post],
+                'success' => true,
+                'results' => $post
             ]);
     }
 

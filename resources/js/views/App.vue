@@ -1,7 +1,6 @@
 <template>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-
             <PostList />
         </div>
     </div>
@@ -11,11 +10,6 @@
 import PostList from '../components/PostList.vue';
 export default {
     name: 'App',
-    data() {
-        return {
-            posts: [],
-        }
-    },
     components: { PostList }
 
 }

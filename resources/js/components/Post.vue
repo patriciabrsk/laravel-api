@@ -9,7 +9,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ post.title }} - {{ post.user_id }}</h5>
                         <p class="card-text">{{ post.content }}</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text"><small class="text-muted">{{ post.created_at }}</small></p>
                     </div>
                 </div>
             </div>

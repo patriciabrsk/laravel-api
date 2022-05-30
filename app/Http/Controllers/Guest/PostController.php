@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    //
     public function index(){
         $posts = Post::paginate(6);
         return view('guest.posts', compact('posts'));
